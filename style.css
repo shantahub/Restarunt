@@ -1,0 +1,315 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+	font-family: 'Yeseva One', cursive;
+}
+.clear{
+    overflow: hidden;
+}
+html,
+body { height: 100% }
+body {
+	font-family: 'Gentium Book Basic', serif;
+	font-size:16px;
+}
+.logo{
+	width:100%;
+	height:100%;
+}
+/*a:hover { text-decoration: none }*/
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+}
+.top-area-bg{}
+.header-text h2{background:url(img/linesambol.png); }
+..top-area{
+	position:relative;
+}
+.top-area-bg{
+	background:url(img/restaurant.jpg)
+    no-repeat fixed 0 0 #fff;
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background-size:cover;
+}
+.mainmenu ul.nav.navber-nav{
+	float:none;
+	font-size:20px;
+	text-align:right;
+}
+.mainmenu ul.nav.navber-nav li{
+	display:inline-block;
+	float:none;
+	position:relative;
+}
+.mainmenu ul.nav.navber-nav li a{
+	color:#fff;
+	padding:40px 15px;
+}
+.mainmenu ul.nav.navber-nav li a:hover{
+	background:none;
+}
+.mainmenu ul.nav.navber-nav li.active::before{
+	background:#F0F0F0;
+	content:"";
+	height:3px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+.header-text h2{
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	color:#fff;
+	font-size:70px;
+	padding-bottom:70px;
+	margin-bottom:40px;
+}
+.btn-filled{
+	color:#fff;
+	display:inline-block;
+	margin:0 5px;
+	padding:10px 30px;
+	position:relative;
+	text-transform:uppercase;
+	z-index: 1;
+	text-decoration:none;
+}
+.btn-filled::after{
+	background:#1d2122 none repeat scroll 0 0;
+	content: "";
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	position:absolute;
+	opacity:0.8;
+	z-index: -1;
+	
+}
+.btn-filled.yellow-color-btn:after {
+	background:#E6D9A6;
+}
+.header-text{
+	padding:100px 0;
+}
+.mainmenu {
+	position:relative;
+	padding-right:80px;
+}
+.social-links{
+	position:absolute;
+	right:0;
+	top:40px;
+}
+.social-links a{
+	color:#DAB341;
+	font-size:20px;
+	display:inline-block;
+	padding-left:5px;
+}
+
+.about-area{
+	background:url(img/full-bloom.png);
+}
+.section-padding{
+	padding:80px 0;
+}
+.section-title{
+	background:url(img/section-title-img.png)no-repeat scroll center bottom;
+	color:#cc9900;
+	margin-bottom:20px;
+	padding-bottom:35px;
+	text-align:center;
+}
+.about-text{
+	margin-top:20px;
+}
+.author-photo{
+	margin-top:30px;
+}
+.ingredients-area{position:relative;}
+.perallax-bg{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-size:cover;
+}
+
+.ingredients-bg{
+	background:url(img/parellax.png);
+}
+.ingredients-text{
+	color:#fff;
+	padding:30px;
+	position:relative;
+	z-index: 1;
+}
+.ingredients-text p{
+	margin-bottom:30px;
+}
+.ingredients-text::after,.testimonial-list::after{
+	background:#000 no-repeat scroll 0 0;
+	content:"";
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	position:absolute;
+	opacity:0.7;
+	z-index:-1
+}
+.section-title.white-sec-title{
+	color:#fff;
+	background:url(img/section-title-img.png)no-repeat scroll center bottom;
+	/*background:url(img/white-divider.png)no-repeat scroll center bottom;*/
+	margin-bottom:20px;
+	padding-bottom:35px;
+}
+.foodmenu-area{
+	background:url(img/foodmenu-area.png);
+}
+.single-menu-item h2{
+	border-bottom: 1px solid #E2D6AC;
+	font-size:21px;
+	color:#C89F2d;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	font-family:Myriad Pro;
+	font-weight:400;
+}
+.single-menu-item h2 span{
+	float:right;
+	font-weight:400;
+}
+.single-menu-item p{
+	font-size:14px;
+	margin:0;
+}
+.single-menu-item{
+	margin-bottom:40px;
+}
+.single-menu-item.special{
+	border:1px solid #d6bb6c;
+	padding:10px;
+	position:relative;
+}
+.single-menu-item.special::before{
+	background:#d6bb6c;
+	color:#fff;
+	content:"Special";
+	font-size:14px;
+	padding:1px 6px;
+	position:absolute;
+	right:-1px;
+	text-transform:upercase;
+	top:-23px;
+}
+.testimonial-area{position:relative;}
+.testimonial-bg{
+	background:url(img/rivewback.png);
+}
+.testimonial-list{
+	color: #fff;
+	font-size: 25px;
+	padding:50px;
+	position: relative;
+	z-index: 1;
+	margin: 35px 0;
+}
+.testimonial-list p.testimonial-author{
+	font-size:20px;
+	margin-top:35px;
+	
+}
+#testimonial-carousel::before{
+	font-family:FontAwesome;
+	content: "\f10d";
+	position:absolute;
+	top:-17px;
+	left:-30px;
+	color:#fff;
+	font-size:30px;
+}
+.contact-area{
+	background:url(img/reservationpattren.png)
+}
+.contact-info p{
+	font-size:18px;
+}
+.contact-img img{
+	margin-left:20px;
+	width:245px;
+}
+.contact-form{
+		text-align:left;
+		margin-top:30px;
+}
+.contact-form label{
+	color:#cb9821;
+}
+.contact-form input[type="text"], .contact-form select{
+	width:100%;
+	padding:5px;
+	border:1px solid #cb9821;
+	margin-bottom:10px;
+	color: #404040;
+}
+.footer-area{
+	background-color:#191919;
+}
+.footer-area p{
+	background-color:#191919;
+	color:#fff;
+	font-size:16px;
+	
+}
+.footer-title{
+	font-size:21px;
+	margin-top:35px;
+	color:#fff;
+}
+.footer-area img{
+	padding:10px 0;
+}
+.contact-form button {
+    padding: 5px 40px;
+    margin:15px auto;
+    color: #fff;
+    background-color: #cb9821;
+    border: none;
+	display:block;
+   
+}
